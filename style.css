@@ -1,0 +1,547 @@
+/*
+Theme Name: Ultimate-Simple MONO
+Theme URI: http://rhasm.net/
+Description: Simple CSS Wordpress template designed by rhasm
+Version: 1.0.0
+Tags: mono, black, white, three-columns, two-columns
+
+License: GPL
+License URI: http://rhasm.net/
+
+Author: rhasm
+Author URI: http://rhasm.net/
+*/
+/* 全体的なこと */
+*
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Meiryo UI',Meiryo,'MS PGothic','Segoe UI',Osaka,'MS Pゴシック',メイリオ,'ヒラギノ角ゴ Pro',Tahoma,Helvetica,sans-serif;
+	text-align: left;
+}
+
+body
+{
+	font-size: 14px;
+}
+
+a       { color: #003eba; text-decoration: none; }
+a:hover { color: #ff9000; }
+
+a.more-link
+{
+	display: inline-block;
+	/display: inline;
+	margin: 10px 0 0 0;
+	padding: 5px;
+	width: 100%;
+	text-align: right;
+}
+
+img
+{
+	border: 0;
+}
+
+/* floatの解除 */
+.cls
+{
+	clear: both;
+}
+
+/* 枠組み */
+div#wrapper
+{
+	/* 特に指定することなし */
+}
+
+/* ヘッダ:固定ページ一覧 */
+div#header_top
+{
+	height: 30px;
+	background-color: #999999;
+	font-size: 14px;
+}
+
+	/* 中央固定ページ領域 */
+	div#header_top div.menu_area
+	{
+		margin: auto;
+		width: 925px;
+		background-color: #000000;
+		color: #ffffff;
+		font-family: monospace;
+		font-size: 18px;
+		line-height: 30px;
+		height: 30px;
+		text-align: center;
+	}
+
+		/* 固定ページ項目はul/liを使う */
+		div.menu_area ul
+		{
+			list-style: none outside;
+		}
+
+		div.menu_area li
+		{
+			float: left;
+			display: block;
+			margin-left: 10px;
+			padding: 0 10px;
+		}
+
+		div.menu_area li a
+		{
+			color: #ffc77f;
+		}
+
+		div.menu_area li.current_page a
+		{
+			color: #ffffff;
+			font-weight: bold;
+		}
+
+/* ヘッダ:タイトル */
+div#header_title
+{
+	clear: both;
+	margin: auto;
+	padding: 10px;
+	width: 905px;
+	height: 100px;
+	background-color: #eeeeee;
+}
+
+	div#header_title table
+	{
+		border: 0;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	div#header_title iframe.hatena-bookmark-button-frame
+	{
+		margin: 5px;
+	}
+
+/* 本体：大枠 */
+div#main
+{
+	clear: both;
+	width: 925px;
+	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+	/* メインコンテンツ */
+	div#content
+	{
+		float: left;
+		width: 550px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+		/* 広告 */
+		div#adsense_top
+		{
+			font-size: 9px;
+			margin: 10px 0 25px;
+			text-align: center;
+		}
+
+		/* ページ操作部分 */
+		div#nextprevious
+		{
+			font-size: 10px;
+			margin: 0 0 15px 0;
+			text-align: center;
+			background-color: #aaaaaa;
+		}
+
+		div#content h3
+		{
+			font-size: 14px;
+			font-weight: bold;
+			border: 0;
+			background-color: #cccccc;
+			padding: 5px;
+			margin: 5px 0;
+		}
+
+		/* 記事本体 */
+		div.post
+		{
+			margin: 10px 0 25px 0;
+			padding: 0 0 5px 0;
+		}
+
+			/* 記事タイトル */
+			h2.postTitle
+			{
+				font-size: 16px;
+				border-top: 1px solid #aaaaaa;
+				border-bottom: 1px solid #aaaaaa;
+				background-color: #cccccc;
+				padding: 5px;
+			}
+
+			/* 記事メタ情報 */
+			div.postMeta
+			{
+				border-bottom: 1px dashed #aaaaaa;
+				color: #555555;
+				padding: 2px 2px 2px 0;
+				text-align: right;
+				margin-bottom: 5px;
+			}
+
+			div.postTag
+			{
+				border-top: 1px dashed #aaaaaa;
+				color: #555555;
+				padding: 2px 2px 2px 0;
+				text-align: right;
+				margin-top: 5px;
+			}
+
+			/* 記事本文 */
+			div.postContent
+			{
+				padding: 0 20px 0 25px;
+				margin-bottom: 5px;
+				line-height: 150%;
+				font-size: 13px;
+			}
+				/* 記事内リスト */
+				div.postContent ul
+				{
+					margin: 10px 0 10px 20px;
+					list-style-type: decimal;
+				}
+
+				/* 記事内テーブル */
+				div.postContent table.show_list
+				{
+					margin: 10px 0;
+					padding: 1px;
+					border: 0;
+					background-color: #555555;
+				}
+
+					div.postContent table.show_list tr
+					{
+						margin: 2px;
+						border: 0;
+						background-color: #cccccc;
+					}
+
+						div.postContent table.show_list img
+						{
+							margin: 5px !important;
+						}
+
+					div.postContent table.show_list td
+					{
+						padding: 5px;
+					}
+
+				/* 記事内iframe(youtubeとか) */
+				div.postContent iframe
+				{
+					margin: 15px 0 15px 10px;
+					border: 2px solid #ffffff;
+					box-shadow: 2px 2px 4px #888888;
+				}
+
+				/* 記事本文内 画像 */
+				div.postContent img
+				{
+					margin: 15px 0 15px 10px;
+					border: 2px solid #ffffff;
+					box-shadow: 2px 2px 4px #888888;
+				}
+
+				/* 記事本文内 画像 左寄せ */
+				div.postContent img.alignleft
+				{
+					float: left;
+					margin-right: 10px !important;
+				}
+
+				/* 記事pタグ */
+				div.postContent p
+				{
+					margin-bottom: 10px;
+				}
+
+				/* 記事本文内 moreリンク */
+				div.postContent div.moreLink
+				{
+					height: 25px;
+					padding: 0;
+					margin-top: 10px;
+					text-align: right;
+					line-height: 25px;
+				}
+
+				div.postContent div.moreLink a
+				{
+					font-size: 16px;
+				}
+
+				div.postContent blockquote
+				{
+					border-left: 5px solid #aaaaaa;
+					padding: 0 0 0 10px;
+					margin: 10px 0;
+					font-size: 12px;
+				}
+
+				/* ランキング用 */
+				div.postContent div.ranking
+				{
+					height: 25px;
+					padding: 0;
+					margin-top: 10px;
+					text-align: right;
+					line-height: 25px;
+				}
+
+				div.postContent div.ranking img
+				{
+					margin: 0 !important;
+					padding: 0 !important;
+				}
+
+		div.yarpp-related {
+			margin: 5px 0;
+		}
+
+		div.yarpp-related ol {
+			list-style-type: none;
+		}
+
+		div.yarpp-related li {
+			margin: 5px 0;
+			padding: 0 0 0 5px;
+			border-left: 10px solid #777777;
+		}
+
+	/* サイドバー */
+	div#sidebar
+	{
+		float: right;
+		width: 360px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+		/* PopularPost用 */
+		div.widget-grid-view-image img
+		{
+			border: 1px solid #555555;
+			box-shadow: 2px 2px 4px #888888;
+		}
+
+		/* サイドバー側Ad */
+		div#sidebar div.adsense_sidebar
+		{
+			font-size: 9px;
+			margin: 0 0 25px 0;
+			text-align: center;
+		}
+
+		/* サイドバー側Ad upper */
+		div#sidebar div.adsense_sidebar_upper
+		{
+			font-size: 9px;
+			margin: 0 0 10x 0;
+			text-align: center;
+		}
+
+		/* サイドバー側Ad middle */
+		div#sidebar div.adsense_sidebar_middle
+		{
+			font-size: 9px;
+			margin: 0 0 25px 0;
+			text-align: center;
+		}
+
+		/* サイドバー1 上：全幅*/
+		div#sidebar div.sidebar1
+		{
+			width: 100%;
+		}
+
+		/* サイドバー2 中：左側 */
+		div#sidebar div.sidebar2
+		{
+			float: left;
+			width: 165px;
+		}
+
+		/* サイドバー3 中：右側 */
+		div#sidebar div.sidebar3
+		{
+			float: right;
+			width: 165px;
+		}
+
+		/* サイドバー4 下：全幅 */
+		div#sidebar div.sidebar4
+		{
+			clear: both;
+			width: 100%;
+		}
+
+			/* 以下全サイドバー共通 */
+			div#sidebar h2.widgettitle
+			{
+				font-size: 14px;
+				border-top: 1px solid #aaaaaa;
+				border-bottom: 1px solid #aaaaaa;
+				background-color: #dddddd;
+				padding: 3px 5px;
+			}
+
+			div#sidebar ul
+			{
+				padding-bottom: 15px;
+			}
+
+			div#sidebar li
+			{
+				font-size: 12px;
+				list-style: none outside;
+				line-height: 150%;
+			}
+
+			/*	ウィジェットは
+				<ul>
+					<li>ウィジェット1</li>
+					<li>ウィジェット2</li>
+					<li>ウィジェット3</li>
+					<li>ウィジェット4</li>
+				</ul>
+				という構造になっていて、ウィジェットそれぞれが
+				<ul>
+					<li>コンテンツ1</li>
+					<li>コンテンツ2</li>
+					<li>コンテンツ3</li>
+					<li>コンテンツ4</li>
+				</ul>
+				と入れ子になっているのです。 */
+			div#sidebar ul ul li
+			{
+				display: block;
+				border-bottom: 1px dashed #cccccc;
+				padding: 4px 4px 4px 5px;
+				clear: both;
+			}
+
+			div#sidebar .wp-post-image
+			{
+				display: inline;
+				margin: 0;
+				border: 3px solid #ffffff;
+				box-shadow: 2px 2px 4px #888888;
+			}
+
+			div#sidebar .wpp_fi
+			{
+				display: inline;
+				margin: 0;
+				border: 3px solid #ffffff;
+				box-shadow: 2px 2px 4px #888888;
+			}
+
+			div#sidebar .post_list_title
+			{
+				display: block;
+				float: right;
+				margin: 3px;
+				width: 270px;
+				height: 50px;
+			}
+
+			div#sidebar .tagcloud
+			{
+				margin: 10px 0;
+				padding: 0;
+				line-height: 200%;
+			}
+
+/* アーカイブページなどのページタイトル */
+h2.pageTitle
+{
+	color: #ffffff;
+	font-size: 16px;
+	background-color: #000000;
+	padding: 5px;
+}
+
+/* フッター */
+div#footer
+{
+	clear: both;
+	margin: auto;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 10px;
+/*	width: 925px; */
+	background-color: #eeeeee;
+	line-height: 150%;
+}
+
+	div#footer a
+	{
+		font-size: 10px;
+	}
+
+/* ページナビ用 */
+.tablenav {
+	color: #2583ad;
+	background:white;
+	margin: 1em auto;
+	line-height:2em;
+	text-align:center;
+}
+
+	a.page-numbers, .tablenav .current {
+		color: #00019b;
+		padding: 2px .4em;
+		border:solid 1px #ccc;
+		text-decoration:none;
+		font-size:14px;
+		font-family: monospace;
+	}
+
+	a.page-numbers:hover {
+		color:white;
+		background: #336699;
+	}
+
+	.tablenav .current {
+		color: white;
+		background: #336699;
+		border-color: #336699;
+		font-weight:bold:
+	}
+
+	.tablenav .next, .tablenav .prev {
+		border:0 none;
+		background:transparent;
+		text-decoration:none;
+		font-size:14px;
+		font-weight:bold;
+		padding: 2px .4em;
+		border: 1px solid #cccccc;
+	}
