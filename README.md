@@ -2,13 +2,13 @@ wp-templates/Ultimate Simple Mono
 ============
 
 Wordpress Template Designed by rhasm.net
-GPL���C�Z���X�Ō��J���Ă��܂��B
-���ρE�Ĕz�z�����R�ł����A�I���W�i���̃e���v���[�g�����ςȂ��ɔ̔����邱�Ƃ͋֎~�ł��B
+GPLライセンスで公開しています。
+改変・再配布等自由ですが、オリジナルのテンプレートを改変なしに販売することは禁止です。
 <<<<<<< HEAD
-���ρE�Ĕz�z����킸�Afooter�Ɉȉ��̌`�Ń����N���f�ڂ��Ă���������Ɗ������ł��B
+改変・再配布等問わず、footerに以下の形でリンクを掲載していただけると嬉しいです。
 
-�����N��URL: http://rhasm.net/
-�����N���[�h: rhasm.net
+リンク先URL: http://www.rhasm.net/
+リンクワード: rhasm.net/wordpress
 
 
 Author: rhasm
